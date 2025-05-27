@@ -23,6 +23,25 @@ const removeFromArray = function(array, item, ...moreArgs) {
 
 
 // Advanced solution
+const alsoRemoveFromArray = function(array, ...args){
+    newArray=[];
+    array.forEach((item)=>{
+        if (!args.includes(item)){
+            newArray.push(item);
+        }
+    }
+    )
+}
 
+
+
+
+// Another advanced 
 // Do not edit below this line
+
+const anotherRemoveFromArray = function(array, ...args){
+    return array.filter(val => !args.includes(val));
+}
+
+
 module.exports = removeFromArray;
